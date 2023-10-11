@@ -1,0 +1,25 @@
+header {
+    .upper-header {
+        height: 100px;
+        display: grid;
+        grid-template-columns:auto 156px 28px;
+        align-items: center;
+        p {
+            font-size: 22px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+   .lower-header {
+    background-color: rgb(212, 212, 212);
+    .inner-lowerh {
+        height: 40px;
+        display: grid;
+        align-content: center;
+    }
+    
+   }
+}

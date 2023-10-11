@@ -1,0 +1,154 @@
+main {
+    // first section 
+    .first-section {
+        height: 395px;
+        background: url(/images/slider-background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        align-content: end;
+        .first-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            overflow: hidden;
+            h1 {
+                margin-bottom: 25px;
+            }
+            p {
+                color: #ffff;
+            }
+            .box {
+                background:linear-gradient(to right, rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.5));
+                padding: 30px 35px 30px 35px;
+                overflow: hidden;
+                position: relative;
+                top: 32px;
+                transition: transform 0.3s ease-in-out;
+                &:hover {
+                    transform: translateY(-32px);
+                }
+            }
+                button {
+                    width: 367px;
+                    top: 30px;
+                    left: -35px;
+                }   
+        }
+    }
+    // second section 
+    .second-section {
+        background: url(/images/content-top.png) top right, url(/images/content-background.png);
+        background-repeat:  no-repeat, repeat;
+        .second-content {
+            height: 470px;
+            display: grid;
+            grid-template-columns: auto 295px;
+            align-items: end;
+            .left-box {
+                padding-right: 35px;
+                h2 {
+                    padding-bottom: 28px;
+                }
+                p {
+                    padding-bottom: 39px;
+                    color: #ece7e7;
+                }
+                .larg-p {
+                    font-size: 20px;
+                    color: #8b8888;
+                }
+            }
+            .right-box {
+                padding-bottom: 25px;
+                h1 {
+                    padding-bottom: 25px;
+                }
+                ul {
+                    display: initial;
+                    color: #ad2539;
+                    font-weight: bold;
+                    li {
+                        margin-bottom: 10px; 
+                        position: relative; 
+                        padding-left: 25px; 
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;  
+                            top: 5px; 
+                            width: 10px; 
+                            height: 10px;
+                            background-image: url(/images/bullet.png);
+                            background-size: cover;
+                            .no-tag {
+                                background-image: initial;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+ }
+   // third-section
+   .third-section {
+    background-color: #868686;
+    
+    p {
+        color: #ece7e7;;
+    }
+    input {
+        height: 35px;
+        width: 250px;
+        font-size: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #dbd6d6;
+        font-style: italic;
+        padding:0 20px 0 20px;
+        margin-bottom: 10px;
+        &:focus {
+            outline: none;
+        }
+    }
+    .third-content {
+        display: grid;
+        grid-template-columns: 350px auto;
+        justify-items: center;
+        align-items: center;
+        height: 300px;
+        .left-side {
+            .my-number {
+                font-size: 22px;
+            }
+            p {
+                margin-top: 20px;
+            } 
+        }
+        .right-side {
+            .my-name {
+                margin-right: 5px;
+            }
+            .my-email {
+                width: 510px;
+            }
+            .my-comment {
+                height: 45px;
+                width: 510px;
+            }
+            button {
+                width: 170px;
+            }
+            .last-button {
+                display: grid;
+                grid-template-columns: auto 170px;
+                align-items: center;
+                margin-top: 10px;
+                p {
+                    font-size: 9px;
+                }
+            }
+
+        }
+    }
+   }
+}

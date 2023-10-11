@@ -1,0 +1,13 @@
+footer {
+    .inner-footer {
+        height: 40px;
+        display: grid;
+        grid-template-columns: 382px auto 165px;
+        align-content: center;
+        text-align: initial;
+        p {
+            padding-left: 10px;
+            font-size: 16px;
+        }
+    }
+}
